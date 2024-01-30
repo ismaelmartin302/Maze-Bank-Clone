@@ -1,18 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
-    <title>Document</title>
+    <title>Maze Bank</title>
 </head>
-<?php
-if ($_POST) {
-    $username = $_POST["usuario"];
-    $password = $_POST["contra"];
-} 
-?>
+
 <body>
     <header>
         <img src="logo.webp" alt="">
@@ -22,8 +17,7 @@ if ($_POST) {
         </nav>
     </header>
     <form action="./usuario.php" method="post">
-        <h3>Bienvenido de nuevo</h3>
-        <h3><?php echo $username ?></h3>
+        <h3>Introduce usuario</h3>
         <input type="text" name="usuario" placeholder="Usuario">
         <input type="password" name="contra" placeholder="Contraseña">
         <input type="submit" value="Iniciar Sesion" class="button">
@@ -31,3 +25,6 @@ if ($_POST) {
 </body>
 
 </html>
+<?php
+if (isset($_SESSION)) session_destroy();
+?>

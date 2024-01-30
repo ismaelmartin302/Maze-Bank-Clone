@@ -13,17 +13,24 @@ body {
             width: 4em;
             height: 4em;
         }
-
-        h1 {
-            font-weight: bold;
-            margin: 0;
-            font-size: 2em;
+        nav {
+            h1 {
+                font-weight: bold;
+                margin: 0;
+                font-size: 2em;
+            }
+    
+            h2 {
+                font-weight: lighter;
+                margin: 0;
+                font-size: 0.8em;
+            }
         }
 
-        h2 {
-            font-weight: lighter;
-            margin: 0;
-            font-size: 0.8em;
+        h3 {
+            margin: auto;
+            margin-right: 1em;
+            color: #12bb12;
         }
     }
 
@@ -43,8 +50,7 @@ body {
 
         input {
             padding: 0.5em 1em;
-            border-radius: 0.5em;
-            border: 1px solid black;
+            border: 2px solid black;
             width: 15em;
         }
 
@@ -52,10 +58,19 @@ body {
             padding: 0.5em 1em;
             width: 17.1em;
             color: white;
+            border: 2px solid black;
             background-color: #DB1300;
         }
         .button:hover {
             background-color: #c31000;
+        }
+        section {
+            display: flex;
+            justify-content: center;
+            margin: auto;
+            max-width: 50em;
+            flex-flow: wrap;
+            gap: 1em;
         }
     }
 }
